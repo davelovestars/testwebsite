@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Proyecto Escuela</title>
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+    
+</head>
+<body>
+
+    <nav>
+        <div class="nav-bar">
+            <span class="logo"><a href="#">triangle solver</a></span>
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">Tierlist</a></span>
+                    <i class='bx bx-x sidebarClose'></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#">Credits</a></li>
+                </ul>
+                
+                
+            </div>
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bxs-moon moon'></i>
+                    <i class='bx bxs-sun sun' ></i>
+                   </div>
+
+
+
+                
+            </div>
+        </div>
+    </nav>
+    <section class="one">
+    <div class="tapa">
+        <h1>Triangle Solver</h1>
+  <div class="container">
+    <form id="triangleForm">
+      <label for="sideA">Side A (leave blank if unknown):</label>
+      <input type="number" id="sideA" placeholder="Enter side A" step="any">
+
+      <label for="sideB">Side B (leave blank if unknown):</label>
+      <input type="number" id="sideB" placeholder="Enter side B" step="any">
+
+      <label for="sideC">Side C (leave blank if unknown):</label>
+      <input type="number" id="sideC" placeholder="Enter side C" step="any">
+
+      <label for="angleA">Angle A (in degrees, leave blank if unknown):</label>
+      <input type="number" id="angleA" placeholder="Enter angle A" step="any">
+
+      <label for="angleB">Angle B (in degrees, leave blank if unknown):</label>
+      <input type="number" id="angleB" placeholder="Enter angle B" step="any">
+
+      <label for="angleC">Angle C (in degrees, leave blank if unknown):</label>
+      <input type="number" id="angleC" placeholder="Enter angle C" step="any">
+
+      <button type="button" onclick="solveTriangle()">Calculate</button>
+      <button type="reset">Reset</button>
+    </form>
+
+  </div>
+
+
+    </section>
+    <section class="two">
+        <div class="tipi">
+        <div id="results" class="results"></div>
+        <canvas id="triangleCanvas" width="400" height="400" style="border:1px solid #ccc; margin-top: 20px;"></canvas>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
